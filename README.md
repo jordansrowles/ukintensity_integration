@@ -1,22 +1,9 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+## ukintensity_integration
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+I originally created a .NET Nuget package called (Carbon Intensity UK)[https://github.com/jordansrowles/CarbonIntensityUK], and decided to recreate the package for Dart for my first library on pub.dev
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 ## Getting started
 
@@ -25,15 +12,23 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+import 'package:ukintensity_integration/ukintensity_integration.dart';
+
+NationalIntensityService service = new NationalIntensityService();
+var info = await service.getToday();
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+__From the .NET Readme__
+
+### UK Carbon Intensity
+.NET wrapper around the British Carbon Intensity API provided by the National Grid. Provides real-time and calculated (+48 hour forecast) of CO2 carbon emissions relating to electricity generation.
+
+> The Carbon Intensity API uses state-of-the-art Machine Learning and sophisticated power system modelling to forecast the carbon intensity and generation mix 96+ hours ahead for each region in Great Britain. 
+>Our OpenAPI allows consumers and smart devices to schedule and minimise CO2 emissions at a local level
+
+[Website](https://carbonintensity.org.uk/)
+ | [Docs](https://carbon-intensity.github.io/api-definitions/)
+ | [Endpoint](https://api.carbonintensity.org.uk/)

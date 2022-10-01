@@ -1,3 +1,4 @@
+/// Generation mix
 class GenerationMix {
   GenerationMixData? data;
 

@@ -1,3 +1,4 @@
+/// Carbon Intensity factor
 class Factor {
   List<FactorData>? data;
 

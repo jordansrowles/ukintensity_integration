@@ -1,4 +1,3 @@
-/// More dartdocs go here.
 library ukintensity_integration;
 
 export 'src/national_intensity/national_intensity.dart';

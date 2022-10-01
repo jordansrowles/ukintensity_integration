@@ -1,3 +1,4 @@
+/// Get Carbon Intensity at National level
 class NationalIntensity {
   List<IntensityData>? data;
 
