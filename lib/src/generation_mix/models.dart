@@ -5,7 +5,9 @@ class GenerationMix {
   GenerationMix({this.data});
 
   GenerationMix.fromJson(Map<String, dynamic> json) {
-    data = json['data'] != null ? new GenerationMixData.fromJson(json['data']) : null;
+    data = json['data'] != null
+        ? new GenerationMixData.fromJson(json['data'])
+        : null;
   }
 
   Map<String, dynamic> toJson() {
