@@ -1,17 +1,14 @@
 import 'package:ukintensity_integration/ukintensity_integration.dart';
 import 'package:test/test.dart';
-/*
-void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
 
-    setUp(() {
-      // Additional setup goes here.
-    });
+void main() async {
+  group('Data access ability tests', () {
+    final data = "a";
 
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+    setUp(() => {});
+
+    test('First test', () {
+      expect("", "");
     });
   });
 }
-*/

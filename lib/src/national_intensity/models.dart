@@ -53,7 +53,7 @@ class Intensity {
   int? actual;
   String? index;
 
-  Intensity({this.forecast, this.actual, this.index});
+  Intensity({this.forecast=0, this.actual=0, this.index});
 
   Intensity.fromJson(Map<String, dynamic> json) {
     forecast = json['forecast'];

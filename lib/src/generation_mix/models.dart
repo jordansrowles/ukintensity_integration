@@ -22,7 +22,7 @@ class GenerationMix {
 class GenerationMixData {
   String? from;
   String? to;
-  List<GenerationmixItem>? generationmix;
+  List<GenerationMixItem>? generationmix;
 
   GenerationMixData({this.from, this.to, this.generationmix});
 
@@ -30,9 +30,9 @@ class GenerationMixData {
     from = json['from'];
     to = json['to'];
     if (json['generationmix'] != null) {
-      generationmix = <GenerationmixItem>[];
+      generationmix = <GenerationMixItem>[];
       json['generationmix'].forEach((v) {
-        generationmix?.add(new GenerationmixItem.fromJson(v));
+        generationmix?.add(new GenerationMixItem.fromJson(v));
       });
     }
   }
@@ -49,13 +49,13 @@ class GenerationMixData {
   }
 }
 
-class GenerationmixItem {
+class GenerationMixItem {
   String? fuel;
   double? perc;
 
-  GenerationmixItem({this.fuel, this.perc});
+  GenerationMixItem({this.fuel, this.perc});
 
-  GenerationmixItem.fromJson(Map<String, dynamic> json) {
+  GenerationMixItem.fromJson(Map<String, dynamic> json) {
     fuel = json['fuel'];
     perc = json['perc'].toDouble();
   }

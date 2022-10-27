@@ -5,7 +5,7 @@ import 'package:ukintensity_integration/src/factors/models.dart';
 /// Carbon Intensity factors
 class FactorsService {
   /// Get Carbon Intensity factors for each fuel type
-  Future<Factor> get() async {
+  static Future<Factor> get() async {
     var res = await http
         .get(Uri.parse("https://api.carbonintensity.org.uk/intensity/factors"));
     return Factor.fromJson(jsonDecode(res.body));

@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Dart format
+
 ## 1.0.1
 
 - Housekeeping: Updated readme, publish script, pubspec. Added sample code
