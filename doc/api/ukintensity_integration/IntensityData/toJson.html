@@ -64,11 +64,11 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Map&lt;String, dynamic&gt; toJson() {
-  final Map&lt;String, dynamic&gt; data = new Map&lt;String, dynamic&gt;();
-  data[&#39;from&#39;] = this.from;
-  data[&#39;to&#39;] = this.to;
-  if (this.intensity != null) {
-    data[&#39;intensity&#39;] = this.intensity?.toJson();
+  final Map&lt;String, dynamic&gt; data = &lt;String, dynamic&gt;{};
+  data[&#39;from&#39;] = from;
+  data[&#39;to&#39;] = to;
+  if (intensity != null) {
+    data[&#39;intensity&#39;] = intensity?.toJson();
   }
   return data;
 }</code></pre>
@@ -132,7 +132,7 @@
 <footer>
   <span class="no-break">
     ukintensity_integration
-      1.0.1
+      1.0.2
   </span>
 
   

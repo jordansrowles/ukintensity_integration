@@ -64,7 +64,7 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Map&lt;String, dynamic&gt; toJson() {
-  final Map&lt;String, dynamic&gt; data = Map&lt;String, dynamic&gt;();
+  final Map&lt;String, dynamic&gt; data = &lt;String, dynamic&gt;{};
   if (this.data != null) {
     data[&#39;data&#39;] = this.data?.map((v) =&gt; v.toJson()).toList();
   }
@@ -128,7 +128,7 @@
 <footer>
   <span class="no-break">
     ukintensity_integration
-      1.0.1
+      1.0.2
   </span>
 
   

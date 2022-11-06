@@ -49,6 +49,9 @@
 </h1></div>
 
     
+<section class="desc markdown">
+  <p>Carbon Intensity data (forecast, actual, index).</p>
+</section>
 
 
 
@@ -58,7 +61,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="Intensity" class="callable">
-          <span class="name"><a href="../ukintensity_integration/Intensity/Intensity.html">Intensity</a></span><span class="signature">(<span class="parameter" id="-param-forecast">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">forecast</span>, </span><span class="parameter" id="-param-actual"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">actual</span>, </span><span class="parameter" id="-param-index"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">index</span>}</span>)</span>
+          <span class="name"><a href="../ukintensity_integration/Intensity/Intensity.html">Intensity</a></span><span class="signature">(<span class="parameter" id="-param-forecast">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">forecast</span> = <span class="default-value">0</span>, </span><span class="parameter" id="-param-actual"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">actual</span> = <span class="default-value">0</span>, </span><span class="parameter" id="-param-index"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">index</span>}</span>)</span>
         </dt>
         <dd>
           
@@ -82,7 +85,18 @@
 
 </dt>
 <dd>
-  
+  The estimated actual Carbon Intensity for the half hour in units gCO2/kWh.
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="average" class="property">
+  <span class="name"><a href="../ukintensity_integration/Intensity/average.html">average</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  The average Carbon Intensity for the datetime range in units gCO2/kWh. Future periods use forecast data. Past data uses actual data.
   <div class="features">read / write</div>
 
 </dd>
@@ -93,7 +107,7 @@
 
 </dt>
 <dd>
-  
+  The forecast Carbon Intensity for the half hour in units gCO2/kWh.
   <div class="features">read / write</div>
 
 </dd>
@@ -115,7 +129,29 @@
 
 </dt>
 <dd>
-  
+  The index is a measure of the Carbon Intensity represented on a scale between 'very low', 'low', 'moderate', 'high', 'very high'.
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="max" class="property">
+  <span class="name"><a href="../ukintensity_integration/Intensity/max.html">max</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  The maximum Carbon Intensity for the datetime range in units gCO2/kWh. Future periods use forecast data. Past data uses actual data.
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="min" class="property">
+  <span class="name"><a href="../ukintensity_integration/Intensity/min.html">min</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  The minimum Carbon Intensity for the datetime range in units gCO2/kWh. Future periods use forecast data. Past data uses actual data.
   <div class="features">read / write</div>
 
 </dd>
@@ -231,12 +267,24 @@
   <li><a href="../ukintensity_integration/FactorsService-class.html">FactorsService</a></li>
   <li><a href="../ukintensity_integration/GenerationMix-class.html">GenerationMix</a></li>
   <li><a href="../ukintensity_integration/GenerationMixData-class.html">GenerationMixData</a></li>
-  <li><a href="../ukintensity_integration/GenerationmixItem-class.html">GenerationmixItem</a></li>
+  <li><a href="../ukintensity_integration/GenerationMixItem-class.html">GenerationMixItem</a></li>
+  <li><a href="../ukintensity_integration/GenerationMixList-class.html">GenerationMixList</a></li>
   <li><a href="../ukintensity_integration/GenerationMixService-class.html">GenerationMixService</a></li>
   <li><a href="../ukintensity_integration/Intensity-class.html">Intensity</a></li>
   <li><a href="../ukintensity_integration/IntensityData-class.html">IntensityData</a></li>
   <li><a href="../ukintensity_integration/NationalIntensity-class.html">NationalIntensity</a></li>
   <li><a href="../ukintensity_integration/NationalIntensityService-class.html">NationalIntensityService</a></li>
+  <li><a href="../ukintensity_integration/NationalStatisticsService-class.html">NationalStatisticsService</a></li>
+  <li><a href="../ukintensity_integration/NationIntensity-class.html">NationIntensity</a></li>
+  <li><a href="../ukintensity_integration/NationIntensityData-class.html">NationIntensityData</a></li>
+  <li><a href="../ukintensity_integration/NationIntensityRegion-class.html">NationIntensityRegion</a></li>
+  <li><a href="../ukintensity_integration/NationIntensityService-class.html">NationIntensityService</a></li>
+  <li><a href="../ukintensity_integration/RegionalIntensity-class.html">RegionalIntensity</a></li>
+  <li><a href="../ukintensity_integration/RegionalIntensityData-class.html">RegionalIntensityData</a></li>
+  <li><a href="../ukintensity_integration/RegionalIntensityService-class.html">RegionalIntensityService</a></li>
+  <li><a href="../ukintensity_integration/Regions-class.html">Regions</a></li>
+  <li><a href="../ukintensity_integration/Statistic-class.html">Statistic</a></li>
+  <li><a href="../ukintensity_integration/StatisticData-class.html">StatisticData</a></li>
 
 
 
@@ -261,9 +309,12 @@
       <a href="../ukintensity_integration/Intensity-class.html#instance-properties">Properties</a>
     </li>
     <li><a href="../ukintensity_integration/Intensity/actual.html">actual</a></li>
+    <li><a href="../ukintensity_integration/Intensity/average.html">average</a></li>
     <li><a href="../ukintensity_integration/Intensity/forecast.html">forecast</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
     <li><a href="../ukintensity_integration/Intensity/index.html">index</a></li>
+    <li><a href="../ukintensity_integration/Intensity/max.html">max</a></li>
+    <li><a href="../ukintensity_integration/Intensity/min.html">min</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
 
     <li class="section-title"><a href="../ukintensity_integration/Intensity-class.html#instance-methods">Methods</a></li>
@@ -286,7 +337,7 @@
 <footer>
   <span class="no-break">
     ukintensity_integration
-      1.0.1
+      1.0.2
   </span>
 
   

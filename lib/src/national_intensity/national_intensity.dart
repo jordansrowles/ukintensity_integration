@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:ukintensity_integration/src/national_intensity/models.dart';
 
 /// Get Carbon Intensity data
+/// {@category Services}
 class NationalIntensityService {
   /// Get Carbon Intensity data for current half hour (specific item from getToday())
   static Future<NationalIntensity> getCurrentHalfHour() async {
@@ -25,6 +26,7 @@ class NationalIntensityService {
     return NationalIntensity.fromJson(jsonDecode(res.body));
   }
 
+  /// Get Carbon Intensity data between the {from} datetime specified and 24hrs before. All times provided in UTC (+00:00).
   static Future<NationalIntensity> getPast24Hr(DateTime datetime) async {
     String properDate = datetime.toIso8601String();
     var res = await http.get(Uri.parse(
